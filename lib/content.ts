@@ -27,28 +27,28 @@ export const products = [
   {
     name: "Financial Services AI",
     status: "Enterprise platform",
-    href: "/products#financial-services-ai",
+    href: "/products/financial-services-ai",
     summary:
       "A consumer harm intelligence platform for financial institutions that need earlier visibility into emerging harm, regulatory exposure, and control failures.",
   },
   {
     name: "Consumer Financial Market Terminal",
-    status: "Live terminal",
-    href: externalLinks.terminal,
+    status: "Product brief",
+    href: "/products/market-terminal",
     summary:
-      "A secure terminal experience for market discovery, financial context, and AI-assisted research across consumer finance.",
+      "A market intelligence terminal for consumer finance teams that need faster research, signal discovery, and decision-ready context.",
   },
   {
     name: "Private Product Intelligence",
-    status: "Secure deliverable",
-    href: "/client-workspace",
+    status: "Product brief",
+    href: "/products/product-intelligence",
     summary:
-      "A proprietary client deliverable for product discovery, market structure, category signals, and competitive intelligence.",
+      "A proprietary intelligence layer for product discovery, market structure, category signals, and competitive analysis.",
   },
   {
     name: "Future Enterprise Products",
     status: "Roadmap",
-    href: "/products#future-enterprise-products",
+    href: "/products/future-enterprise-products",
     summary:
       "Future enterprise-grade systems for applied AI, secure delivery, and domain-specific operating layers.",
   },
