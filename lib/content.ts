@@ -7,28 +7,29 @@ export const navItems = [
 ];
 
 export const externalLinks = {
-  clientWorkspace: "/client-workspace#workspace-gate",
+  clientWorkspace: "/client-workspace",
   terminal: "https://fsaimarketterminal32440.z13.web.core.windows.net/terminal/",
-  cpdim: "https://fsaifrontend30919.z13.web.core.windows.net/cpdim/index.html",
-  deliverables: "/client-workspace#deliverables-gate",
+  privateProductIntelligence:
+    "https://fsaifrontend30919.z13.web.core.windows.net/cpdim/index.html",
+  deliverables: "/client-workspace",
 };
 
 export const capabilities = [
-  "Enterprise AI systems",
+  "Consumer harm intelligence",
+  "Narrative-first regulatory analytics",
+  "Emerging risk detection",
+  "Control failure identification",
   "Secure client workspaces",
-  "Research-grade model workflows",
-  "Financial and product intelligence",
-  "Delivery operations",
   "Azure-native deployment",
 ];
 
 export const products = [
   {
     name: "Financial Services AI",
-    status: "Active development",
+    status: "Enterprise platform",
     href: "/products#financial-services-ai",
     summary:
-      "Decision intelligence for financial institutions that need governed models, auditable workflows, and fast market response.",
+      "A consumer harm intelligence platform for financial institutions that need earlier visibility into emerging harm, regulatory exposure, and control failures.",
   },
   {
     name: "Consumer Financial Market Terminal",
@@ -38,11 +39,11 @@ export const products = [
       "A secure terminal experience for market discovery, financial context, and AI-assisted research across consumer finance.",
   },
   {
-    name: "Consumer Product Discovery Intelligence Model (CPDIM)",
-    status: "Live product",
-    href: externalLinks.cpdim,
+    name: "Private Product Intelligence",
+    status: "Secure deliverable",
+    href: "/client-workspace",
     summary:
-      "A product intelligence model for discovering demand, positioning, competitors, pricing, and category movement.",
+      "A proprietary client deliverable for product discovery, market structure, category signals, and competitive intelligence.",
   },
   {
     name: "Future Enterprise Products",

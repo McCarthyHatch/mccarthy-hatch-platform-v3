@@ -14,8 +14,8 @@ export default function ClientWorkspacePage() {
             Secure entry for terminal and client deliverables.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-300">
-            Enter the assigned access code to open the approved product surface.
-            Terminal access and secure deliverables are separated by gate.
+            Enter the assigned access code to open the approved destination.
+            Terminal access and secure client deliverables are separated by gate.
           </p>
         </div>
       </section>
@@ -33,11 +33,11 @@ export default function ClientWorkspacePage() {
 
           <AccessGate
             title="Client Secure Deliverables"
-            eyebrow="Controlled delivery"
-            summary="Secure access to approved client deliverables, including CPDIM: the Consumer Product Discovery Intelligence Model for demand, category, competitor, and product discovery analysis."
+            eyebrow="Controlled client delivery"
+            summary="Secure access to approved client deliverables, including proprietary product intelligence for demand, category, competitor, and discovery analysis."
             code="CROSNER2026"
-            href={externalLinks.cpdim}
-            buttonLabel="Open CPDIM"
+            href={externalLinks.privateProductIntelligence}
+            buttonLabel="Open deliverables"
           />
         </div>
       </section>

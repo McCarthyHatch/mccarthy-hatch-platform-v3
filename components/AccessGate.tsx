@@ -17,22 +17,18 @@ export function AccessGate({
   summary,
   code,
   href,
-  buttonLabel,
 }: AccessGateProps) {
   const [value, setValue] = useState("");
-  const [unlocked, setUnlocked] = useState(false);
   const [error, setError] = useState("");
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (value.trim().toUpperCase() === code) {
-      setUnlocked(true);
-      setError("");
+      window.location.assign(href);
       return;
     }
 
-    setUnlocked(false);
     setError("Invalid access code.");
   }
 
@@ -46,31 +42,22 @@ export function AccessGate({
         <p className="mt-4 text-sm leading-6 text-zinc-400">{summary}</p>
       </div>
 
-      {!unlocked ? (
-        <form onSubmit={submit} className="mt-8 grid gap-3">
-          <input
-            value={value}
-            onChange={(event) => setValue(event.target.value)}
-            placeholder="Enter access code"
-            aria-label={`${title} access code`}
-            className="border border-white/10 bg-black px-4 py-3 font-mono text-sm uppercase text-white outline-none transition focus:border-emerald-300"
-          />
-          {error ? <p className="text-sm text-red-300">{error}</p> : null}
-          <button
-            type="submit"
-            className="inline-flex items-center justify-center rounded-full border border-emerald-300/50 bg-emerald-300 px-5 py-3 text-sm font-semibold text-black transition hover:bg-white"
-          >
-            Unlock
-          </button>
-        </form>
-      ) : (
-        <a
-          href={href}
-          className="mt-8 inline-flex items-center justify-center rounded-full border border-emerald-300/50 bg-emerald-300 px-5 py-3 text-sm font-semibold text-black transition hover:bg-white"
+      <form onSubmit={submit} className="mt-8 grid gap-3">
+        <input
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          placeholder="Enter access code"
+          aria-label={`${title} access code`}
+          className="border border-white/10 bg-black px-4 py-3 font-mono text-sm uppercase text-white outline-none transition focus:border-emerald-300"
+        />
+        {error ? <p className="text-sm text-red-300">{error}</p> : null}
+        <button
+          type="submit"
+          className="inline-flex items-center justify-center rounded-full border border-emerald-300/50 bg-emerald-300 px-5 py-3 text-sm font-semibold text-black transition hover:bg-white"
         >
-          {buttonLabel}
-        </a>
-      )}
+          Enter
+        </button>
+      </form>
     </section>
   );
 }

@@ -26,12 +26,6 @@ export function Navigation() {
           ))}
         </div>
 
-        <Link
-          href="/client-workspace"
-          className="rounded-full border border-white/20 bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-emerald-300"
-        >
-          Workspace
-        </Link>
       </nav>
     </header>
   );
