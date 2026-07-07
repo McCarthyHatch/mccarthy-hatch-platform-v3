@@ -26,11 +26,12 @@ export default function Home() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/client-workspace"
-                className="rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                Open Client Workspace
-              </Link>
+  		href="/client-workspace"
+  		className="rounded-full px-5 py-3 text-sm font-semibold transition"
+		style={{ backgroundColor: "#22d3ee", color: "#020617" }}
+>
+		Open Client Workspace
+	      </Link>
 
               <Link
                 href="/client-workspace#terminal"
