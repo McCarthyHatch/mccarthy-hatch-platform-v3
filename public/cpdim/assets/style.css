@@ -1,0 +1,178 @@
+:root{
+--navy:#0b1f3a;
+--blue:#1d4ed8;
+--gold:#d4af37;
+--light:#f7f9fc;
+--border:#dbe3ef;
+--text:#243447;
+--success:#1f9d55;
+--danger:#d92d20;
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Segoe UI,Arial,sans-serif;
+background:var(--light);
+color:var(--text);
+}
+
+header{
+background:linear-gradient(135deg,#081426,#143d73);
+color:white;
+padding:42px;
+}
+
+header h1{
+margin:0;
+font-size:42px;
+}
+
+header h2{
+margin-top:8px;
+font-weight:400;
+color:#d9e6ff;
+}
+
+.wrap{
+max-width:1500px;
+margin:auto;
+padding:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+gap:24px;
+}
+
+.card{
+background:white;
+border-radius:14px;
+padding:22px;
+box-shadow:0 8px 24px rgba(0,0,0,.08);
+border:1px solid var(--border);
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card h2{
+margin-top:0;
+font-size:24px;
+color:var(--navy);
+}
+
+.metric{
+display:flex;
+justify-content:space-between;
+padding:6px 0;
+border-bottom:1px solid #eee;
+}
+
+.metric span:first-child{
+font-weight:600;
+}
+
+.button{
+display:inline-block;
+margin-top:18px;
+background:var(--blue);
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.section{
+background:white;
+margin-top:30px;
+padding:26px;
+border-radius:14px;
+box-shadow:0 5px 18px rgba(0,0,0,.06);
+}
+
+.section h2{
+margin-top:0;
+color:var(--navy);
+border-bottom:3px solid var(--gold);
+padding-bottom:10px;
+}
+
+.evidence{
+margin-bottom:18px;
+padding:18px;
+border-left:5px solid var(--blue);
+background:#fafcff;
+}
+
+.badge{
+display:inline-block;
+padding:4px 10px;
+background:#e6eefc;
+border-radius:20px;
+font-size:12px;
+margin-right:8px;
+}
+
+.footer{
+margin:60px 0;
+text-align:center;
+color:#666;
+font-size:13px;
+}
+
+#EVIDENCE_BLOCK{
+    margin-top:20px;
+}
+
+.evidence{
+    display:block;
+    background:#ffffff;
+    border:1px solid #d7dee8;
+    border-left:6px solid #b8860b;
+    border-radius:10px;
+    padding:18px;
+    margin:18px 0;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.evidence h3{
+    margin:10px 0;
+    color:#0b1f3a;
+    font-size:20px;
+}
+
+.evidence p{
+    line-height:1.6;
+    margin:10px 0;
+}
+
+.badge{
+    display:inline-block;
+    background:#163d73;
+    color:#fff;
+    padding:4px 10px;
+    border-radius:14px;
+    margin-right:6px;
+    margin-bottom:8px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.evidence a{
+    color:#1d4ed8;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.evidence a:hover{
+    text-decoration:underline;
+}
+

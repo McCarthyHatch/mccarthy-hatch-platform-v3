@@ -8,9 +8,13 @@ export const navItems = [
 
 export const externalLinks = {
   clientWorkspace: "/client-workspace",
-  terminal: "https://fsaimarketterminal32440.z13.web.core.windows.net/terminal/",
-  privateProductIntelligence:
-    "https://fsaifrontend30919.z13.web.core.windows.net/cpdim/index.html",
+
+  terminal:
+    "https://fsaimarketterminal32440.z13.web.core.windows.net/terminal/",
+
+  // Local CPDIM Portal hosted within Platform V3
+  privateProductIntelligence: "/cpdim/index.html",
+
   deliverables: "/client-workspace",
 };
 
