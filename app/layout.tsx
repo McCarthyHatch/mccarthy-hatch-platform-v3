@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Footer, Navigation } from "@/components/SiteChrome";
+import { ConditionalFooter, ConditionalNavigation } from "@/components/ConditionalChrome";
 import "./globals.css";
+import "./corporate.css";
 
 export const metadata: Metadata = {
-  title: "McCarthy Hatch Platform",
+  title: "McCarthy Hatch | Intelligence Begins with Listening",
   description:
-    "Enterprise AI platform for financial intelligence, product discovery, and secure client delivery.",
+    "Advanced artificial intelligence, institutional expertise, and human insight.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <Navigation />
+        <ConditionalNavigation />
         {children}
-        <Footer />
+        <ConditionalFooter />
       </body>
     </html>
   );
